@@ -15,6 +15,8 @@ instead at other libraries:
 * [i18n-js](https://github.com/fnando/i18n-js)
 * [i18next](http://i18next.com/)
 
+For a comparison with i18n-js library, please refer to the [dedicated wiki page](https://github.com/RobertoPrevato/I.js/wiki/Comparison-with-i18n-js);
+
 ## Examples
 The following example shows how to work with scoped translations, using I.js:
 ```js
@@ -83,6 +85,9 @@ The following example shows how to use simple templates:
 
 })();
 ```
+
+## How to organize the locale files
+Please refer to the [dedicated wiki page](https://github.com/RobertoPrevato/I.js/wiki/Organize-locale-files).
 
 ## Examples in other repositories
 The following repositories contain examples of internationalization implemented using I.js:
