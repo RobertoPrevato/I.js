@@ -87,6 +87,7 @@ The following example shows how to use simple templates:
 The following repositories contain examples of internationalization implemented using I.js:
 * [jQuery-KingTable](https://github.com/RobertoPrevato/jQuery-KingTable)
 * [jQuery-DataEntry](https://github.com/RobertoPrevato/jQuery-DataEntry)
+
 Live demos:
 * [KingTable live demo](http://ugrose.com/content/demos/kingtable/index.html)
 * [DataEntry live demo](http://ugrose.com/content/demos/jqdataentry/index.html)
