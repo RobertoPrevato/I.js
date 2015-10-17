@@ -1,4 +1,4 @@
-/**
+/*!
  * I.js, simple helper to manage localized strings.
  * https://github.com/RobertoPrevato/I.js
  *
@@ -44,12 +44,12 @@
     setLocale: function (locale) {
       this.locale = locale;
       //add to body
-      if (typeof document !== "undefined") {
-        var body = document.body;
+      if (typeof document !== und) {
+        var bodyclasses = document.body.classList;
         for (var x in this.regional) {
-          body.classList.remove(x.toLowerCase());
+          bodyclasses.remove(lower(x));
         }
-        body.classList.add(locale.toLowerCase());
+        bodyclasses.add(lower(locale));
       }
     },
 
@@ -92,12 +92,12 @@
      */
     t: function (key, options) {
       var locale = this.locale, regional = this.regional;
-      if (!regional[locale]) return ["Missing regional for: ", locale].join("");
-      var w = "",
+      if (!regional[locale]) return [missingRegional, locale].join(stringEmpty);
+      var w = stringEmpty,
         o = regional[locale],
         parts = key.split(/\./g);
       while (w = parts.shift()) {
-        if (!o) return ["Missing translation for: ", key].join("");
+        if (!o) return [missingTranslation, key].join(stringEmpty);
         o = o[w];
       }
       if (o) {
@@ -106,13 +106,13 @@
         if (options && typeof o == "string") {
           return o.replace(this.rx, function (s, a) {
             if (!options.hasOwnProperty(a))
-              throw "missing property " + a + ", for template: " + key;
+              throw "Missing property " + a + ", for template: " + key;
             return options[a];
           });
         }
         return o;
       }
-      return ["Missing translation for: ", locale, ".", key].join("");
+      return [missingTranslation, locale, ".", key].join(stringEmpty);
     },
 
     /**
@@ -123,13 +123,13 @@
     lookup: function (key) {
       //returns true if the
       var locale = this.locale, regional = this.regional;
-      if (!regional[locale]) return ["Missing regional for: ", locale].join("");
-      var w = "", o = regional[locale], parts = key.split(/\./g);
+      if (!regional[locale]) return [missingRegional, locale].join(stringEmpty);
+      var w = stringEmpty, o = regional[locale], parts = key.split(/\./g);
       while (w = parts.shift()) {
         if (!o) return false;
         o = o[w];
       }
-      return typeof o != "undefined";
+      return typeof o != und;
     },
 
     /**
@@ -141,5 +141,10 @@
       return this.lookup(key) ? this.t(key) : null;
     }
   };
+  var lower = function (s) { return s.toLowerCase(); };
+  var und = "undefined";
+  var stringEmpty = "";
+  var missingRegional = "Missing regional for: ";
+  var missingTranslation = "Missing translation for: ";
   return I;
 }));
