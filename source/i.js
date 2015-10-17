@@ -9,10 +9,10 @@
  * http://www.opensource.org/licenses/MIT
  */
 ;(function(factory) {
-  if (typeof module !== 'undefined' && module.exports) {
+  if (typeof module !== "undefined" && module.exports) {
     // Node/CommonJS
     module.exports = factory(this);
-  } else if (typeof define === 'function' && define.amd) {
+  } else if (typeof define === "function" && define.amd) {
     // AMD
     var global=this;
     define("i", function(){ return factory(global);});

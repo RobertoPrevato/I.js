@@ -2,9 +2,10 @@
 Tiny and simple utility to implement localization in JavaScript, supporting only scoped translations; and simple
 templates.
 
-## Objectives of the plugin
+## Features
 * Support scoped translations
 * Allow the implementation of simple localization
+* Supports NodeJs and amd
 
 ## More complex solutions
 I.js is meant to be as simple and short as possible, and to support only scoped translations.
