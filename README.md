@@ -67,14 +67,14 @@ The following example shows how to use simple templates:
   };
 
   I.setLocale("en");
-  I.t("voc.HiName"); // --> "Hello, {{name}}!"
-  I.t("voc.HiName", {
+  I.t("voc.HelloName"); // --> "Hello, {{name}}!"
+  I.t("voc.HelloName", {
     name: "Edyta" // e.g. user.name
   }); // --> "Hello, Edyta!"
 
   I.setLocale("it");
-  I.t("voc.HiName"); // --> "Ciao, {{name}}!"
-  I.t("voc.HiName", {
+  I.t("voc.HelloName"); // --> "Ciao, {{name}}!"
+  I.t("voc.HelloName", {
     name: "Edyta" // e.g. user.name
   }); // --> "Ciao, Edyta!"
 
