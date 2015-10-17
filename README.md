@@ -3,13 +3,14 @@ Tiny and simple utility to implement localization in JavaScript, supporting only
 templates.
 
 ## Features
-* Support scoped translations
+* Supports scoped translations
 * Allow the implementation of simple localization
 * Supports NodeJs and amd
 
 ## More complex solutions
-I.js is meant to be as simple and short as possible, and to support only scoped translations.
-Users who need more complex solutions (e.g. with support for pluralization), should look instead at other libraries:
+I.js is meant to be as simple and short as possible, and to support **only** scoped translations.
+Users who need more complex solutions (e.g. with support for pluralization; currencies; dates management), should look
+instead at other libraries:
 * [i18n-js](https://github.com/fnando/i18n-js)
 * [i18next](http://i18next.com/)
 
@@ -81,6 +82,14 @@ The following example shows how to use simple templates:
 
 })();
 ```
+
+## Examples in other repositories
+The following repositories contain examples of internationalization implemented using I.js:
+* [jQuery-KingTable](https://github.com/RobertoPrevato/jQuery-KingTable)
+* [jQuery-DataEntry](https://github.com/RobertoPrevato/jQuery-DataEntry)
+Live demos:
+* [KingTable live demo](http://ugrose.com/content/demos/kingtable/index.html)
+* [DataEntry live demo](http://ugrose.com/content/demos/jqdataentry/index.html)
 
 ## Notes
 When setting a locale using the function setLocale; a class to the document.body is also added accordingly
