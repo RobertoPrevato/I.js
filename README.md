@@ -5,7 +5,7 @@ templates.
 ## Features
 * Supports scoped translations
 * Supports simple templates with mustaches {{ }}
-* Allows the implementation of simple localization
+* Allows the implementation of text localization
 * Supports NodeJs and amd
 
 ## More complex solutions
