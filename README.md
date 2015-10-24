@@ -1,6 +1,5 @@
 # I.js
-Tiny and simple utility to implement localization in JavaScript, supporting only scoped translations; and simple
-templates.
+Tiny utility to implement localization in JavaScript, supporting only scoped translations; and simple templates.
 
 ## Features
 * Supports scoped translations
