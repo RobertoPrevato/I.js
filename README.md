@@ -92,10 +92,13 @@ Please refer to the [dedicated wiki page](https://github.com/RobertoPrevato/I.js
 The following repositories contain examples of internationalization implemented using I.js:
 * [jQuery-KingTable](https://github.com/RobertoPrevato/jQuery-KingTable)
 * [jQuery-DataEntry](https://github.com/RobertoPrevato/jQuery-DataEntry)
+* [DataEntry](https://github.com/RobertoPrevato/DataEntry)
+* [React-template](https://github.com/RobertoPrevato/React-template)
 
 Live demos:
 * [KingTable live demo](http://ugrose.com/content/demos/kingtable/index.html)
 * [DataEntry live demo](http://ugrose.com/content/demos/jqdataentry/index.html)
+* [React-template demo](http://ugrose.com/content/demos/react-template/index.html)
 
 ## Notes
 When setting a locale using the function setLocale; a class to the document.body is also added accordingly
