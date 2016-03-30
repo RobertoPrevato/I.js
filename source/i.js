@@ -2,7 +2,7 @@
  * I.js, simple helper to manage localized strings.
  * https://github.com/RobertoPrevato/I.js
  *
- * Copyright 2015, Roberto Prevato
+ * Copyright 2016, Roberto Prevato
  * http://ugrose.com
  *
  * Licensed under the MIT license:
@@ -139,6 +139,43 @@
      */
     tryGet: function (key) {
       return this.lookup(key) ? this.t(key) : null;
+    },
+
+    /**
+     * Adds a name value collection of localized strings to the I.regional object.
+     * @param o
+     * @returns {*}
+     */
+    add: function (o) {
+      return this.extend(this.regional, o);
+    },
+
+    /**
+     * Assigns own enumerable properties of source objects to the destination object, but only if properties don't get overwritten.
+     * Source objects are applied from left to right.
+     * Logs error messages if duplicated keys are found.
+     * @returns {*}
+     */
+    extend: function () {
+      var args = arguments;
+      if (!args.length) return;
+      if (args.length == 1) return args[0];
+      var a = args[0], b, x;
+      for (var i = 1, l = args.length; i < l; i++) {
+        b = args[i];
+        if (!b) continue;
+        var errors = [];
+        for (x in b) {
+          //in this case, we don't want to accidentally override a previous value defined in an object.
+          if (a.hasOwnProperty(x))
+            errors.push("`" + x + "`");
+          else
+            a[x] = b[x];
+        }
+        if (errors.length)
+          console.error("I.js Found " + errors.length + " duplicated keys. " + errors.join("; "));
+      }
+      return a;
     }
   };
   var lower = function (s) { return s.toLowerCase(); };
