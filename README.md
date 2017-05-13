@@ -96,9 +96,8 @@ The following repositories contain examples of internationalization implemented 
 * [React-template](https://github.com/RobertoPrevato/React-template)
 
 Live demos:
-* [KingTable live demo](http://ugrose.com/content/demos/kingtable/index.html)
-* [DataEntry live demo](http://ugrose.com/content/demos/jqdataentry/index.html)
-* [React-template demo](http://ugrose.com/content/demos/react-template/index.html)
+* [DataEntry live demo](https://robertoprevato.github.io/demos/dataentry/index.html)
+* [React-template demo](https://robertoprevato.github.io/demos/react-template/index.html#/)
 
 ## Notes
 When setting a locale using the function setLocale; a class to the document.body is also added accordingly
