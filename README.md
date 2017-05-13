@@ -90,10 +90,10 @@ Please refer to the [dedicated wiki page](https://github.com/RobertoPrevato/I.js
 
 ## Examples in other repositories
 The following repositories contain examples of internationalization implemented using I.js:
-* [jQuery-KingTable](https://github.com/RobertoPrevato/jQuery-KingTable)
-* [jQuery-DataEntry](https://github.com/RobertoPrevato/jQuery-DataEntry)
 * [DataEntry](https://github.com/RobertoPrevato/DataEntry)
 * [React-template](https://github.com/RobertoPrevato/React-template)
+* [jQuery-KingTable](https://github.com/RobertoPrevato/jQuery-KingTable)
+* [jQuery-DataEntry](https://github.com/RobertoPrevato/jQuery-DataEntry)
 
 Live demos:
 * [DataEntry live demo](https://robertoprevato.github.io/demos/dataentry/index.html)
